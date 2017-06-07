@@ -9,6 +9,7 @@ The implementation uses a PID controller for calculating the steering angle. In 
 * On a straight line accelerate as much as possible
 * In a curve, reduce the speed
 * If steering angle is over a certain limit, reduce speed
+* enforce a minimum and maximum speed.
 
 This functionality is done in the code in the method PID::GetThrottle()
 There is of course room for optimization via fine-tuning the parameter values.
